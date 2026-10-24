@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "ToolVault",
+      "hasCanvas": false,
+      "bodyTextLen": 875,
+      "bodyTextHash": "1c50c35b7985287acd08cd64f29eebe8a80f8ddbfad7a551ee87c3431f38bc44",
+      "bodyTextPrefix": "T ToolVault $josephdaniel20 Website editor Instant digital deliv",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "ToolVault",
+      "hasCanvas": false,
+      "bodyTextLen": 875,
+      "bodyTextHash": "cdf72b9af42d99af79158aa41398267bc788bcbdf1170eecafdb39f53d64abb6",
+      "bodyTextPrefix": "T ToolVault $josephdaniel20 Instant digital delivery Tools that ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

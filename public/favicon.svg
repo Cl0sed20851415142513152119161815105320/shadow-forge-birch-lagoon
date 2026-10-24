@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="ToolVault">
+  <rect width="32" height="32" rx="8" fill="#07080a"/>
+  <circle cx="16" cy="13.2" r="5.3" fill="#00D54B"/>
+  <path fill="#00D54B" d="M13.05 16.4h5.9l2.25 8.35H10.8z"/>
+</svg>

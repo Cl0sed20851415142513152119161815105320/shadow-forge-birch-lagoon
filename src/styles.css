@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Sora:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #07080a;
+  --color-surface: #111318;
+  --color-surface-2: #1a1d24;
+  --color-fg: #f4f6f4;
+  --color-muted: #8d958e;
+  --color-primary: #00d54b;
+  --color-primary-ink: #04210e;
+  --color-border: #2a2e36;
+  --color-danger: #ff5a6a;
+  --font-sans: "Sora", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+  --radius: 1rem;
+}
+
+@layer base {
+  html {
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+  body {
+    font-family: var(--font-sans);
+    background:
+      radial-gradient(900px 420px at 90% -10%, color-mix(in srgb, var(--color-primary) 18%, transparent), transparent 60%),
+      radial-gradient(700px 380px at -10% 20%, color-mix(in srgb, #25f4ee 10%, transparent), transparent 55%),
+      var(--color-bg);
+    min-height: 100%;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
