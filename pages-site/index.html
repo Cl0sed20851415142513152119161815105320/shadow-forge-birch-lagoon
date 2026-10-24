@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ToolVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="bar">
+    <div class="brand">
+      <div class="mark" id="mark">T</div>
+      <div>
+        <strong id="shopName">ToolVault</strong>
+        <div class="muted" id="tagLineSmall">$josephdaniel20</div>
+      </div>
+    </div>
+    <div class="row">
+      <a class="ghost hide-sm" href="editor.html">Website editor</a>
+      <a id="tiktok" class="iconbtn" href="https://www.tiktok.com/@iifatality" target="_blank" rel="noreferrer" aria-label="TikTok">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="#25F4EE" transform="translate(-0.7 0.35)" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/><path fill="#FE2C55" transform="translate(0.7 -0.25)" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/><path fill="#fff" d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/></svg>
+      </a>
+      <button class="iconbtn" id="openCart" type="button" aria-label="Cart">Cart <span id="count"></span></button>
+    </div>
+  </header>
+  <main>
+    <p class="pill">Instant digital delivery</p>
+    <h1>Tools that ship<span>the moment you pay.</span></h1>
+    <p class="lead" id="tagline">Premium online tools. Instant after Cash App.</p>
+    <section id="grid" class="grid"></section>
+  </main>
+  <footer>
+    <span id="foot"></span>
+    <a class="show-sm" href="editor.html">Website editor</a>
+    <a id="tiktokText" href="https://www.tiktok.com/@iifatality" target="_blank" rel="noreferrer">@iifatality</a>
+  </footer>
+  <div id="cart" class="overlay hidden"><aside>
+    <div class="row between"><h2>Cart</h2><button type="button" id="closeCart">Close</button></div>
+    <div id="lines"></div>
+    <div class="row between"><strong>Total</strong><strong id="total">$0.00</strong></div>
+    <button class="go" id="toCheckout" type="button">Checkout</button>
+  </aside></div>
+  <div id="checkout" class="overlay hidden"><div class="sheet">
+    <div class="row between"><h2>Checkout</h2><button type="button" id="closeCheck">Close</button></div>
+    <div id="summary"></div>
+    <label>Name<input id="buyer" /></label>
+    <label>Email for delivery<input id="email" type="email" /></label>
+    <p class="note">Send the total on Cash App to <b id="cashTag">$josephdaniel20</b>. Put the order ID in the note. No card numbers are collected.</p>
+    <a class="go" id="cashLink" href="https://cash.app/$josephdaniel20" target="_blank" rel="noreferrer">Open Cash App</a>
+    <button class="go" id="place" type="button">Place order</button>
+  </div></div>
+  <div id="done" class="overlay hidden"><div class="sheet center">
+    <p class="muted">Order ID</p>
+    <p class="oid" id="oid"></p>
+    <p id="doneText"></p>
+    <a class="go" id="payNow" href="https://cash.app/$josephdaniel20" target="_blank" rel="noreferrer">Pay on Cash App</a>
+    <button type="button" id="closeDone">Done</button>
+  </div></div>
+  <script src="store.js"></script>
+  <script src="shop.js"></script>
+</body>
+</html>
